@@ -1,0 +1,11 @@
+.DS_Store
+.env
+.evn.*
+/node_modules/
+
+# React Router
+/.react-router/
+/build/
+
+# Generated preview runtime (pnpm build:preview)
+/public/studio/

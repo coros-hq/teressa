@@ -1,0 +1,507 @@
+{
+  "app/components/auth-header.tsx": {
+    "mtime": 1790763039.953003,
+    "ast_hash": "d931bf7e1fd352d756da03450e4ea092",
+    "semantic_hash": "d931bf7e1fd352d756da03450e4ea092"
+  },
+  "app/components/auth-illustration/auth-illustration.tsx": {
+    "mtime": 1790766226.6096022,
+    "ast_hash": "b3ee0867e8f89943dd269b6c3de4e780",
+    "semantic_hash": "b3ee0867e8f89943dd269b6c3de4e780"
+  },
+  "app/components/auth-illustration/design-stage.tsx": {
+    "mtime": 1790766226.5869923,
+    "ast_hash": "d0f85f07436a553bd4a22dfc089e382a",
+    "semantic_hash": "d0f85f07436a553bd4a22dfc089e382a"
+  },
+  "app/components/auth-illustration/feedback-stage.tsx": {
+    "mtime": 1790765098.9314048,
+    "ast_hash": "07c0db2644fcea4c36df2089ffe84f66",
+    "semantic_hash": "07c0db2644fcea4c36df2089ffe84f66"
+  },
+  "app/components/auth-illustration/notification-card.tsx": {
+    "mtime": 1790765098.925037,
+    "ast_hash": "e011b1a9af391e4b6cb83187c03bf196",
+    "semantic_hash": "e011b1a9af391e4b6cb83187c03bf196"
+  },
+  "app/components/auth-illustration/publish-stage.tsx": {
+    "mtime": 1790765098.9294035,
+    "ast_hash": "d31bddb252dbadc8bb0b243ac530d055",
+    "semantic_hash": "d31bddb252dbadc8bb0b243ac530d055"
+  },
+  "app/components/auth-layout.tsx": {
+    "mtime": 1790768095.6386077,
+    "ast_hash": "e5dc74ba308633e9c82b7e0a4fb0df6e",
+    "semantic_hash": "e5dc74ba308633e9c82b7e0a4fb0df6e"
+  },
+  "app/components/dashboard/app-header.tsx": {
+    "mtime": 1790769397.5182548,
+    "ast_hash": "dd9d6bbf11a5855eb8d2892195e0f32f",
+    "semantic_hash": ""
+  },
+  "app/components/dashboard/app-sidebar.tsx": {
+    "mtime": 1790800420.6193953,
+    "ast_hash": "5dd6969350bb0278a4a27b41fc9d2d10",
+    "semantic_hash": ""
+  },
+  "app/components/dashboard/dashboard-layout.tsx": {
+    "mtime": 1790767663.2074444,
+    "ast_hash": "8408692f968c65c73c8b091c60755aef",
+    "semantic_hash": "8408692f968c65c73c8b091c60755aef"
+  },
+  "app/components/dashboard/empty-state.tsx": {
+    "mtime": 1790769397.5184183,
+    "ast_hash": "803c6ddcba7b97761e88b62d4dc672ee",
+    "semantic_hash": ""
+  },
+  "app/components/dashboard/page-container.tsx": {
+    "mtime": 1790767575.8763833,
+    "ast_hash": "cc1334befe833642ace60bee1c2b2308",
+    "semantic_hash": "cc1334befe833642ace60bee1c2b2308"
+  },
+  "app/components/dashboard/page-header.tsx": {
+    "mtime": 1790767575.8783777,
+    "ast_hash": "801613bd001865d7e67fc47f391d42c4",
+    "semantic_hash": "801613bd001865d7e67fc47f391d42c4"
+  },
+  "app/components/dashboard/placeholder-grid.tsx": {
+    "mtime": 1790767575.882371,
+    "ast_hash": "a9022470a0997e7ec8abcde9b33aaeae",
+    "semantic_hash": "a9022470a0997e7ec8abcde9b33aaeae"
+  },
+  "app/components/dashboard/user-menu.tsx": {
+    "mtime": 1790800413.4835262,
+    "ast_hash": "940c309853b4c6b09521c7e04be63b25",
+    "semantic_hash": ""
+  },
+  "app/components/ui/avatar.tsx": {
+    "mtime": 1790767510.0336509,
+    "ast_hash": "b404e740574609c90d5e1d1e0542f39d",
+    "semantic_hash": "b404e740574609c90d5e1d1e0542f39d"
+  },
+  "app/components/ui/breadcrumb.tsx": {
+    "mtime": 1790767510.115305,
+    "ast_hash": "509d90980ce9a6070580175c7f114b61",
+    "semantic_hash": "509d90980ce9a6070580175c7f114b61"
+  },
+  "app/components/ui/button.tsx": {
+    "mtime": 1790763406.7949576,
+    "ast_hash": "5d161347c81ff9fa9d1a91e2bfaae6b1",
+    "semantic_hash": "5d161347c81ff9fa9d1a91e2bfaae6b1"
+  },
+  "app/components/ui/card.tsx": {
+    "mtime": 1790767510.065398,
+    "ast_hash": "7a1907244a8ac28f77cb4d2eaf496811",
+    "semantic_hash": "7a1907244a8ac28f77cb4d2eaf496811"
+  },
+  "app/components/ui/checkbox.tsx": {
+    "mtime": 1790762831.8934274,
+    "ast_hash": "055f89c555afc9631dd5b67ce931babb",
+    "semantic_hash": "055f89c555afc9631dd5b67ce931babb"
+  },
+  "app/components/ui/dropdown-menu.tsx": {
+    "mtime": 1790767510.00048,
+    "ast_hash": "15b6910c901b73bab731783810d8ea9a",
+    "semantic_hash": "15b6910c901b73bab731783810d8ea9a"
+  },
+  "app/components/ui/field.tsx": {
+    "mtime": 1790762777.6651108,
+    "ast_hash": "a556b811d2f1277743f963b66350ad09",
+    "semantic_hash": "a556b811d2f1277743f963b66350ad09"
+  },
+  "app/components/ui/input.tsx": {
+    "mtime": 1790763406.791529,
+    "ast_hash": "1c0336d5dd0693b0a6dafd1fa42c66c0",
+    "semantic_hash": "1c0336d5dd0693b0a6dafd1fa42c66c0"
+  },
+  "app/components/ui/label.tsx": {
+    "mtime": 1790762770.5883439,
+    "ast_hash": "e58d3e796d3b58fcc1dafe3262d9cb4e",
+    "semantic_hash": "e58d3e796d3b58fcc1dafe3262d9cb4e"
+  },
+  "app/components/ui/separator.tsx": {
+    "mtime": 1790762654.5496762,
+    "ast_hash": "c30fc172992262d301fe21f9b3330c82",
+    "semantic_hash": "c30fc172992262d301fe21f9b3330c82"
+  },
+  "app/components/ui/sheet.tsx": {
+    "mtime": 1790762654.6889594,
+    "ast_hash": "b285a4e3df81f35c366963e8b77ed287",
+    "semantic_hash": "b285a4e3df81f35c366963e8b77ed287"
+  },
+  "app/components/ui/sidebar.tsx": {
+    "mtime": 1790767541.5339115,
+    "ast_hash": "3102d9cbd95fad6e770d477ab755828a",
+    "semantic_hash": "3102d9cbd95fad6e770d477ab755828a"
+  },
+  "app/components/ui/skeleton.tsx": {
+    "mtime": 1790762654.6512496,
+    "ast_hash": "9d9320cc2a8ff46a2b8364fd90b9e2e7",
+    "semantic_hash": "9d9320cc2a8ff46a2b8364fd90b9e2e7"
+  },
+  "app/components/ui/tooltip.tsx": {
+    "mtime": 1790762654.5769515,
+    "ast_hash": "22246acacfd97518547c5295bb52e040",
+    "semantic_hash": "22246acacfd97518547c5295bb52e040"
+  },
+  "app/hooks/use-media-query.ts": {
+    "mtime": 1790763770.6285958,
+    "ast_hash": "08de4dbc593ac1ce3a9adaba706892e0",
+    "semantic_hash": "08de4dbc593ac1ce3a9adaba706892e0"
+  },
+  "app/hooks/use-mobile.ts": {
+    "mtime": 1790783867.1872673,
+    "ast_hash": "61a1e71a8f128f3105fffc6e68c90f8b",
+    "semantic_hash": ""
+  },
+  "app/lib/utils.ts": {
+    "mtime": 1790762595.6204293,
+    "ast_hash": "0482d21cfeab8cfcfe44f94927e45afb",
+    "semantic_hash": "0482d21cfeab8cfcfe44f94927e45afb"
+  },
+  "app/root.tsx": {
+    "mtime": 1790763351.57693,
+    "ast_hash": "938b27e81f88e1695fe56e74c8b20e6e",
+    "semantic_hash": "938b27e81f88e1695fe56e74c8b20e6e"
+  },
+  "app/routes.ts": {
+    "mtime": 1790800452.0764134,
+    "ast_hash": "a26d1b79956f4ac7dc9dbd3a70c921bb",
+    "semantic_hash": ""
+  },
+  "app/routes/app/components.tsx": {
+    "mtime": 1790800473.275218,
+    "ast_hash": "fa5658a49280199793fbd320f7e92ba9",
+    "semantic_hash": ""
+  },
+  "app/routes/app/feedback.tsx": {
+    "mtime": 1790767575.8906033,
+    "ast_hash": "1b8545251bd3e95118405c8314824f9e",
+    "semantic_hash": "1b8545251bd3e95118405c8314824f9e"
+  },
+  "app/routes/app/layout.tsx": {
+    "mtime": 1790769148.7048357,
+    "ast_hash": "3123092674d15d69445c524f07206bf9",
+    "semantic_hash": ""
+  },
+  "app/routes/app/overview.tsx": {
+    "mtime": 1790767575.8867373,
+    "ast_hash": "922ea78d59051c5acd129d60172b2ccb",
+    "semantic_hash": "922ea78d59051c5acd129d60172b2ccb"
+  },
+  "app/routes/app/settings.tsx": {
+    "mtime": 1790767575.8923426,
+    "ast_hash": "d6dbe245766f5156c7b1033b07327695",
+    "semantic_hash": "d6dbe245766f5156c7b1033b07327695"
+  },
+  "app/routes/auth/layout.tsx": {
+    "mtime": 1790763801.0724254,
+    "ast_hash": "73edaf01b423d1a95dc534a929b97dda",
+    "semantic_hash": "73edaf01b423d1a95dc534a929b97dda"
+  },
+  "app/routes/auth/sign-in.tsx": {
+    "mtime": 1790800405.5898345,
+    "ast_hash": "545961c72627bedd5d4f5e1c7eba5bc8",
+    "semantic_hash": ""
+  },
+  "app/routes/auth/sign-up.tsx": {
+    "mtime": 1790800405.5901294,
+    "ast_hash": "08e1cb71f2b1e0c5660c0f496c59f942",
+    "semantic_hash": ""
+  },
+  "app/routes/home.tsx": {
+    "mtime": 1790762477.922831,
+    "ast_hash": "0e4066842be00b8fd732b17d0314debf",
+    "semantic_hash": "0e4066842be00b8fd732b17d0314debf"
+  },
+  "components.json": {
+    "mtime": 1790762589.3474083,
+    "ast_hash": "2b36516c868842a170ff3ec42716d465",
+    "semantic_hash": "2b36516c868842a170ff3ec42716d465"
+  },
+  "package.json": {
+    "mtime": 1790800366.656801,
+    "ast_hash": "0953fba1c388a52cb89da2a42456cb55",
+    "semantic_hash": ""
+  },
+  "react-router.config.ts": {
+    "mtime": 1790760151.4218848,
+    "ast_hash": "6756d955f9e7bf3eae2817433bf72b26",
+    "semantic_hash": "6756d955f9e7bf3eae2817433bf72b26"
+  },
+  "tsconfig.json": {
+    "mtime": 1790760151.4235334,
+    "ast_hash": "11267f3797774e3032c93a934b1a3bd1",
+    "semantic_hash": "11267f3797774e3032c93a934b1a3bd1"
+  },
+  "vite.config.ts": {
+    "mtime": 1790800473.2718272,
+    "ast_hash": "cc826a0b6c01059ae786adf53ed13b5b",
+    "semantic_hash": ""
+  },
+  ".agents/skills/react-router/SKILL.md": {
+    "mtime": 1790760160.401144,
+    "ast_hash": "8c73931eeab68fa2ece319edfa6e3368",
+    "semantic_hash": "8c73931eeab68fa2ece319edfa6e3368"
+  },
+  ".agents/skills/react-router/references/data-mode.md": {
+    "mtime": 1790760160.4004343,
+    "ast_hash": "67c36fe5bda9ee9d87af818391fd04ea",
+    "semantic_hash": "67c36fe5bda9ee9d87af818391fd04ea"
+  },
+  ".agents/skills/react-router/references/declarative-mode.md": {
+    "mtime": 1790760160.3972437,
+    "ast_hash": "da7120fc4121df25cceb29ce53449ba8",
+    "semantic_hash": "da7120fc4121df25cceb29ce53449ba8"
+  },
+  ".agents/skills/react-router/references/framework-mode.md": {
+    "mtime": 1790760160.3986874,
+    "ast_hash": "c6d362a5ca3cd0dc78db0514c0db188f",
+    "semantic_hash": "c6d362a5ca3cd0dc78db0514c0db188f"
+  },
+  ".agents/skills/react-router/references/rsc.md": {
+    "mtime": 1790760160.3997104,
+    "ast_hash": "ec91793e7ad38ba8d2feffe65f9f9a87",
+    "semantic_hash": "ec91793e7ad38ba8d2feffe65f9f9a87"
+  },
+  "README.md": {
+    "mtime": 1790760151.4220927,
+    "ast_hash": "326d3abf712fa381742d7e7b196af2c2",
+    "semantic_hash": "326d3abf712fa381742d7e7b196af2c2"
+  },
+  "public/logo.svg": {
+    "mtime": 1790768078.26461,
+    "ast_hash": "f7dabf3e82b179850e416a10fdf7c6c3",
+    "semantic_hash": "f7dabf3e82b179850e416a10fdf7c6c3"
+  },
+  "app/components/studio/canvas.tsx": {
+    "mtime": 1790783538.6117465,
+    "ast_hash": "6a4a7452f87da7a295465e9936d38a60",
+    "semantic_hash": ""
+  },
+  "app/components/studio/code-editor.tsx": {
+    "mtime": 1790769856.7435493,
+    "ast_hash": "5aeeb865e86e7c64c979e0e074b1ba43",
+    "semantic_hash": ""
+  },
+  "app/components/studio/left-panel.tsx": {
+    "mtime": 1790781076.6599095,
+    "ast_hash": "764b27fc833180e3e11ca4350825ae24",
+    "semantic_hash": ""
+  },
+  "app/components/studio/outline-tab.tsx": {
+    "mtime": 1790783495.1296024,
+    "ast_hash": "3d0fd6688ae6bf5a4977513a65763bd8",
+    "semantic_hash": ""
+  },
+  "app/components/studio/preview-frame.tsx": {
+    "mtime": 1790769777.2679105,
+    "ast_hash": "2f8a4afaab2bdbcd9795d45f25d05bfd",
+    "semantic_hash": ""
+  },
+  "app/components/studio/preview-protocol.ts": {
+    "mtime": 1790769777.267586,
+    "ast_hash": "e236744eac4f1085f30563ce7267c61c",
+    "semantic_hash": ""
+  },
+  "app/components/studio/right-panel.tsx": {
+    "mtime": 1790781400.923859,
+    "ast_hash": "6fb036bcefd77d75e246e9af2402cbf6",
+    "semantic_hash": ""
+  },
+  "app/components/studio/sample-component.ts": {
+    "mtime": 1790769093.1891882,
+    "ast_hash": "f0e48721cf174d843a6b3cea97bb9b60",
+    "semantic_hash": ""
+  },
+  "app/components/studio/studio-page.tsx": {
+    "mtime": 1790800452.0769408,
+    "ast_hash": "90e32a8c89cf425a81b34b2133dfdc6b",
+    "semantic_hash": ""
+  },
+  "app/components/studio/studio-top-bar.tsx": {
+    "mtime": 1790800452.0772762,
+    "ast_hash": "7ae8c41a58020228373c95620f4b4be1",
+    "semantic_hash": ""
+  },
+  "app/components/studio/theme-vars.ts": {
+    "mtime": 1790769072.43885,
+    "ast_hash": "de11514fb682f8ad7b30518ac8db45ea",
+    "semantic_hash": ""
+  },
+  "app/components/studio/use-stored-layout.ts": {
+    "mtime": 1790769148.6839585,
+    "ast_hash": "1f03fb268463f5090cccbb998fda120c",
+    "semantic_hash": ""
+  },
+  "app/components/ui/dialog.tsx": {
+    "mtime": 1790768947.3410583,
+    "ast_hash": "e3455f9bcf68319862f5540f3c1bf10d",
+    "semantic_hash": ""
+  },
+  "app/components/ui/popover.tsx": {
+    "mtime": 1790768931.7323196,
+    "ast_hash": "f23b5b3a61669efff5f042754e8255c4",
+    "semantic_hash": ""
+  },
+  "app/components/ui/resizable.tsx": {
+    "mtime": 1790768931.5718038,
+    "ast_hash": "7adabec76f4d072c82e366dcf482c1a3",
+    "semantic_hash": ""
+  },
+  "app/components/ui/select.tsx": {
+    "mtime": 1790768931.6866245,
+    "ast_hash": "14bb0425d45aab3bc56086bb09f9d7ca",
+    "semantic_hash": ""
+  },
+  "app/components/ui/tabs.tsx": {
+    "mtime": 1790768931.6181219,
+    "ast_hash": "00af02574ec272deceabf2a55a4353ea",
+    "semantic_hash": ""
+  },
+  "app/routes/app/authenticated.tsx": {
+    "mtime": 1790800413.483033,
+    "ast_hash": "9f4ccf2fdaa85525163388efc60d2c99",
+    "semantic_hash": ""
+  },
+  "app/routes/app/studio.tsx": {
+    "mtime": 1790800452.057113,
+    "ast_hash": "fd7e2e259047da30449b295a7b58e0a9",
+    "semantic_hash": ""
+  },
+  "app/studio-preview/entry.tsx": {
+    "mtime": 1790769777.2677372,
+    "ast_hash": "ce06a08cd942e8995ac0a0644512baa4",
+    "semantic_hash": ""
+  },
+  "app/studio-preview/modules.ts": {
+    "mtime": 1790769011.5705724,
+    "ast_hash": "76370bd7591c51db78e3a8a730fbc816",
+    "semantic_hash": ""
+  },
+  "vite.preview.config.ts": {
+    "mtime": 1790769011.574978,
+    "ast_hash": "e535de054978ab7c0c4fd8cf5e49bd2d",
+    "semantic_hash": ""
+  },
+  "app/components/studio/canvas-controls.tsx": {
+    "mtime": 1790769819.6594615,
+    "ast_hash": "39987b85a6dcd72feb6539fc8f75043e",
+    "semantic_hash": ""
+  },
+  "app/components/studio/class-groups.ts": {
+    "mtime": 1790780946.720936,
+    "ast_hash": "fed3c12a91fe5efddf1a3d66660a43f1",
+    "semantic_hash": ""
+  },
+  "app/components/studio/design-tab.tsx": {
+    "mtime": 1790783559.2307363,
+    "ast_hash": "bcee17f0f0ee7a855e1413a1cfd681d0",
+    "semantic_hash": ""
+  },
+  "app/components/studio/inline-title.tsx": {
+    "mtime": 1790769998.2504463,
+    "ast_hash": "514f2c02e6aaaa61433e74192e4a8d95",
+    "semantic_hash": ""
+  },
+  "app/components/studio/jsx-tree.ts": {
+    "mtime": 1790773760.0554428,
+    "ast_hash": "6ab16f30bbf0fb3f0f05761038276742",
+    "semantic_hash": ""
+  },
+  "app/components/studio/use-canvas-transform.ts": {
+    "mtime": 1790769819.6574936,
+    "ast_hash": "eabb5e24995155aa11cebadae45047e7",
+    "semantic_hash": ""
+  },
+  "app/lib/paths.ts": {
+    "mtime": 1790769397.518648,
+    "ast_hash": "adf6c48bc1d203e30bb52cba68947630",
+    "semantic_hash": ""
+  },
+  "app/components/studio/color-control.tsx": {
+    "mtime": 1790779465.082721,
+    "ast_hash": "dfccfd6e351550a15c70d403a7c98015",
+    "semantic_hash": ""
+  },
+  "app/components/studio/color-utils.ts": {
+    "mtime": 1790774384.8888292,
+    "ast_hash": "2307e506fed108aeae85628db7b1103e",
+    "semantic_hash": ""
+  },
+  "app/components/studio/canvas-object.tsx": {
+    "mtime": 1790783538.6105616,
+    "ast_hash": "9a588fb7eba105c3a0ff803b032dc546",
+    "semantic_hash": ""
+  },
+  "app/components/studio/canvas-toolbar.tsx": {
+    "mtime": 1790783538.611454,
+    "ast_hash": "f5b1a0641e2f4314125b052c1c5451f6",
+    "semantic_hash": ""
+  },
+  "app/components/studio/design-model.ts": {
+    "mtime": 1790800430.08638,
+    "ast_hash": "ba93db53fe98e8b4e711d8f0e817fada",
+    "semantic_hash": ""
+  },
+  "app/components/studio/color-popover.tsx": {
+    "mtime": 1790779465.0798683,
+    "ast_hash": "9259c2193e2ca2a825f266603dd5d912",
+    "semantic_hash": ""
+  },
+  "app/components/studio/object-color.tsx": {
+    "mtime": 1790779465.0851178,
+    "ast_hash": "7d877b2993fff620a6cb6d1f63ad78e4",
+    "semantic_hash": ""
+  },
+  "app/components/studio/selection-layer.tsx": {
+    "mtime": 1790783538.6112068,
+    "ast_hash": "7324c9588b562d485f1f15a79691eea7",
+    "semantic_hash": ""
+  },
+  "app/components/studio/live-preview.tsx": {
+    "mtime": 1790780990.2775826,
+    "ast_hash": "2000572cd00f6820fc9648522127ed23",
+    "semantic_hash": ""
+  },
+  "app/components/studio/measure-layer.tsx": {
+    "mtime": 1790781521.5078077,
+    "ast_hash": "bdb1e76b7477297e1c4e4b594ced85d0",
+    "semantic_hash": ""
+  },
+  "app/components/studio/use-design-history.ts": {
+    "mtime": 1790783495.1297383,
+    "ast_hash": "35b840bcfd21a9537e48c56cfd6c4854",
+    "semantic_hash": ""
+  },
+  "app/lib/components.server.ts": {
+    "mtime": 1790800452.0498693,
+    "ast_hash": "2c9f7018df1f9db995eb7e88a3af950f",
+    "semantic_hash": ""
+  },
+  "app/lib/supabase/server.ts": {
+    "mtime": 1790800376.5482044,
+    "ast_hash": "56d5e866ef230976d9ae3a56037bced2",
+    "semantic_hash": ""
+  },
+  "app/routes/api/save-component.ts": {
+    "mtime": 1790800452.054936,
+    "ast_hash": "fc0dc26d962978ce5910c34a63886b17",
+    "semantic_hash": ""
+  },
+  "app/routes/auth/confirm.tsx": {
+    "mtime": 1790800405.5637617,
+    "ast_hash": "c0abf902cbc88b612edda8aa0cc8b720",
+    "semantic_hash": ""
+  },
+  "app/routes/auth/sign-out.tsx": {
+    "mtime": 1790800405.5661328,
+    "ast_hash": "1e2bd2609bde20b763cc7dc21be20c1e",
+    "semantic_hash": ""
+  },
+  "supabase/migrations/0001_init.sql": {
+    "mtime": 1790800376.5506876,
+    "ast_hash": "a416579f3530b14e6dbcbce892576eb5",
+    "semantic_hash": ""
+  }
+}
