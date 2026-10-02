@@ -51,10 +51,10 @@ export default function Home() {
           </div>
         )}
 
-        {/* Without JavaScript the check can't run, so offer the way in directly. */}
+        {/* Without JavaScript the check can't run, so offer the public page directly. */}
         <noscript>
           <Link to={SIGNED_OUT_PATH} className="text-sm underline underline-offset-4">
-            Continue to sign in
+            Continue to explore
           </Link>
         </noscript>
       </div>

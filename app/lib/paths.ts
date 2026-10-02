@@ -14,6 +14,6 @@ export const commentPath = (slug: string, commentId: string) => `/c/${slug}#comm
 export const HAS_PUBLIC_PROFILE = true;
 export const publicProfilePath = (username: string) => `/u/${username}`;
 
-// Where the root address sends people: the dashboard if they're signed in, the sign-in page if not.
+// Where the root address sends people: the dashboard if they're signed in, the public explore page if not.
 export const SIGNED_IN_PATH = "/overview";
-export const SIGNED_OUT_PATH = "/sign-in";
+export const SIGNED_OUT_PATH = "/explore";
