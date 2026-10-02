@@ -35,8 +35,8 @@
     "semantic_hash": "e5dc74ba308633e9c82b7e0a4fb0df6e"
   },
   "app/components/dashboard/app-header.tsx": {
-    "mtime": 1790890342.1952486,
-    "ast_hash": "d12f710f8d6ef74a98f3b717dd096e19",
+    "mtime": 1790933305.2741592,
+    "ast_hash": "44d98d18d92d92bc797f4e7a850c8fe3",
     "semantic_hash": ""
   },
   "app/components/dashboard/app-sidebar.tsx": {
@@ -760,8 +760,8 @@
     "semantic_hash": ""
   },
   "app/components/settings/appearance-form.tsx": {
-    "mtime": 1790855461.2147572,
-    "ast_hash": "9b5befeae754e1ca082c77fb9a10e7c7",
+    "mtime": 1790933236.3007143,
+    "ast_hash": "08774f4434d967a5b2d6fd59d0a5c814",
     "semantic_hash": ""
   },
   "app/components/settings/avatar-uploader.tsx": {
@@ -875,8 +875,8 @@
     "semantic_hash": ""
   },
   "app/lib/settings/validation.test.ts": {
-    "mtime": 1790855167.1221144,
-    "ast_hash": "2bedc2efb82df79a696183510f53266e",
+    "mtime": 1790933247.716014,
+    "ast_hash": "a88e3162d9f0224b1a5a7f9eb19143bc",
     "semantic_hash": ""
   },
   "app/lib/settings/validation.ts": {
@@ -890,8 +890,8 @@
     "semantic_hash": ""
   },
   "app/lib/theme.ts": {
-    "mtime": 1790855167.0990207,
-    "ast_hash": "df83b7ff2bc9fb1bd45956d3927ad4b9",
+    "mtime": 1790933236.2796195,
+    "ast_hash": "cc169f25efc74f6ef7ed23ddb0a29e03",
     "semantic_hash": ""
   },
   "app/routes/api/settings-account.ts": {
@@ -975,8 +975,8 @@
     "semantic_hash": ""
   },
   "app/components/gallery/public-layout.tsx": {
-    "mtime": 1790880795.123,
-    "ast_hash": "d720718ce3f6df47a2e0bf6793e38100",
+    "mtime": 1790933305.274298,
+    "ast_hash": "f5dbde82efd1eed3cca917d7f0fbdb37",
     "semantic_hash": ""
   },
   "app/lib/data/gallery.server.ts": {
@@ -1257,6 +1257,11 @@
   "supabase/migrations/0013_component_editor.sql": {
     "mtime": 1790890174.998163,
     "ast_hash": "b4c1907e0d76030056754dcb4bd7496a",
+    "semantic_hash": ""
+  },
+  "app/components/theme-toggle.tsx": {
+    "mtime": 1790933305.2532458,
+    "ast_hash": "e9ef8cf5f72a8d05f41fe12ed348938f",
     "semantic_hash": ""
   }
 }

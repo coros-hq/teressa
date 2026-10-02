@@ -1,7 +1,7 @@
 import assert from "node:assert/strict";
 import { test } from "node:test";
 
-import { resolveTheme } from "../theme.ts";
+import { isThemeChoice } from "../theme.ts";
 import {
   AVATAR, RESERVED_USERNAMES, cleanGithub, confirmationMatches, normalizeProfile, sameProfile, sniffImageType,
   validateAvatar, validateEmailAddress, validateNewPassword, validateProfile, validateUsername, validateWebsite,
@@ -92,9 +92,8 @@ test("deleting needs the username typed exactly; with no username, a phrase", ()
   assert.equal(confirmationMatches("ada_l", null), false);
 });
 
-test("the theme: system follows the device, the others don't", () => {
-  assert.equal(resolveTheme("system", true), "dark");
-  assert.equal(resolveTheme("system", false), "light");
-  assert.equal(resolveTheme("light", true), "light");
-  assert.equal(resolveTheme("dark", false), "dark");
+test("the theme: only light and dark are valid choices, never the device's", () => {
+  assert.equal(isThemeChoice("light"), true);
+  assert.equal(isThemeChoice("dark"), true);
+  assert.equal(isThemeChoice("system"), false);
 });

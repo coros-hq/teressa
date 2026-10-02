@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 
 import { Label } from "~/components/ui/label";
 import { RadioGroup, RadioGroupItem } from "~/components/ui/radio-group";
-import { getStoredTheme, setTheme, watchSystemTheme, type ThemeChoice } from "~/lib/theme";
+import { getStoredTheme, setTheme, type ThemeChoice } from "~/lib/theme";
 import { cn } from "~/lib/utils";
 
 import { SectionCard } from "./section";
@@ -22,14 +22,7 @@ function Swatch({ mode }: { mode: "light" | "dark" }) {
 function Preview({ choice }: { choice: ThemeChoice }) {
   return (
     <span aria-hidden="true" className="border-border block h-20 w-full overflow-hidden rounded-lg border">
-      {choice === "system" ? (
-        <span className="grid h-full grid-cols-2">
-          <Swatch mode="light" />
-          <Swatch mode="dark" />
-        </span>
-      ) : (
-        <Swatch mode={choice} />
-      )}
+      <Swatch mode={choice} />
     </span>
   );
 }
@@ -37,16 +30,14 @@ function Preview({ choice }: { choice: ThemeChoice }) {
 const OPTIONS: { value: ThemeChoice; label: string; hint: string }[] = [
   { value: "light", label: "Light", hint: "Always light" },
   { value: "dark", label: "Dark", hint: "Always dark" },
-  { value: "system", label: "System", hint: "Match your device" },
 ];
 
 // Applies as soon as you pick one, and is remembered in this browser. There is no Save button.
 export function AppearanceForm() {
-  const [choice, setChoice] = useState<ThemeChoice>("system");
+  const [choice, setChoice] = useState<ThemeChoice>("light");
 
   useEffect(() => {
     setChoice(getStoredTheme());
-    return watchSystemTheme();
   }, []);
 
   return (
@@ -54,7 +45,7 @@ export function AppearanceForm() {
       <RadioGroup
         value={choice}
         aria-label="Theme"
-        className="grid-cols-1 gap-3 sm:grid-cols-3"
+        className="grid-cols-1 gap-3 sm:grid-cols-2"
         onValueChange={(v) => {
           setChoice(v as ThemeChoice);
           setTheme(v as ThemeChoice);

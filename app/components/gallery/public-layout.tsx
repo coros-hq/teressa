@@ -1,5 +1,6 @@
 import { Link, NavLink } from "react-router";
 
+import { ThemeToggle } from "~/components/theme-toggle";
 import { Button } from "~/components/ui/button";
 import { cn } from "~/lib/utils";
 
@@ -36,6 +37,7 @@ export function PublicLayout({ children, signedIn = false }: { children: React.R
             </nav>
           </div>
           <div className="flex items-center gap-2">
+            <ThemeToggle className="size-11" />
             {signedIn ? (
               <Button asChild className="min-h-11">
                 <Link to="/overview">Open dashboard</Link>

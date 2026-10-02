@@ -1,16 +1,16 @@
 # Graph Report - teressa-app  (2026-10-02)
 
 ## Corpus Check
-- 249 files · ~105,289 words
+- 250 files · ~105,273 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 1508 nodes · 3434 edges · 90 communities (78 shown, 12 thin omitted)
+- 1507 nodes · 3434 edges · 82 communities (70 shown, 12 thin omitted)
 - Extraction: 98% EXTRACTED · 2% INFERRED · 0% AMBIGUOUS · INFERRED: 57 edges (avg confidence: 0.79)
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `09e32a6f`
+- Built from commit: `56dd3f0c`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -77,8 +77,6 @@
 - [[_COMMUNITY_properties|properties]]
 - [[_COMMUNITY_color-control.tsx|color-control.tsx]]
 - [[_COMMUNITY_author|author]]
-- [[_COMMUNITY_avatar-uploader.tsx|avatar-uploader.tsx]]
-- [[_COMMUNITY_studio-top-bar.tsx|studio-top-bar.tsx]]
 - [[_COMMUNITY_iconLibrary|iconLibrary]]
 - [[_COMMUNITY_delete-account-dialog.tsx|delete-account-dialog.tsx]]
 - [[_COMMUNITY_use-publish-checks.ts|use-publish-checks.ts]]
@@ -89,21 +87,15 @@
 - [[_COMMUNITY_studio.tsx|studio.tsx]]
 - [[_COMMUNITY_settings-delete.ts|settings-delete.ts]]
 - [[_COMMUNITY_layers-to-code.test.ts|layers-to-code.test.ts]]
-- [[_COMMUNITY_delete-account-dialog.tsx|delete-account-dialog.tsx]]
 - [[_COMMUNITY_v|v]]
 - [[_COMMUNITY_sonner.tsx|sonner.tsx]]
-- [[_COMMUNITY_guard|guard]]
 - [[_COMMUNITY_extends|extends]]
 - [[_COMMUNITY_react|react]]
-- [[_COMMUNITY_package.json|package.json]]
 - [[_COMMUNITY_sign-in.tsx|sign-in.tsx]]
-- [[_COMMUNITY_dependencies.ts|dependencies.ts]]
-- [[_COMMUNITY_measureTarget|measureTarget]]
-- [[_COMMUNITY_createPublicClient|createPublicClient]]
 - [[_COMMUNITY_package.json|package.json]]
 
 ## God Nodes (most connected - your core abstractions)
-1. `Button()` - 46 edges
+1. `Button()` - 47 edges
 2. `getUser()` - 40 edges
 3. `StudioPage()` - 23 edges
 4. `Canvas()` - 21 edges
@@ -115,8 +107,6 @@
 10. `DesignObject` - 14 edges
 
 ## Surprising Connections (you probably didn't know these)
-- `useSidebar()` --references--> `react`  [EXTRACTED]
-  app/components/ui/sidebar.tsx → package.json
 - `SidebarMenuSkeleton()` --references--> `react`  [EXTRACTED]
   app/components/ui/sidebar.tsx → package.json
 - `opts()` --calls--> `label()`  [INFERRED]
@@ -125,23 +115,25 @@
   app/components/studio/completions.ts → app/components/settings/connected-accounts.tsx
 - `loadTailwind()` --indirect_call--> `label()`  [INFERRED]
   app/components/studio/completions.ts → app/components/settings/connected-accounts.tsx
+- `NotificationsList()` --indirect_call--> `v()`  [INFERRED]
+  app/components/settings/notifications-form.tsx → app/lib/publish/checks/accessibility.test.ts
 
 ## Import Cycles
 - None detected.
 
-## Communities (90 total, 12 thin omitted)
+## Communities (82 total, 12 thin omitted)
 
 ### Community 0 - "App Shell (Sidebar & Layout)"
-Cohesion: 0.15
-Nodes (5): SidebarContext, SidebarContextProps, Tooltip(), TooltipContent(), TooltipTrigger()
+Cohesion: 0.09
+Nodes (26): AppSidebar(), NAV, NavItem, useCurrentUser(), UserAvatar(), UserMenuItems(), Sidebar(), SidebarContent() (+18 more)
 
 ### Community 1 - "Header & User Menu"
-Cohesion: 0.10
-Nodes (11): UserMenuItems(), count(), host(), ProfileView(), Avatar(), AvatarFallback(), AvatarImage(), DropdownMenuItem() (+3 more)
+Cohesion: 0.12
+Nodes (12): isPayload(), NotificationsBell(), CanvasToolbar(), Tool, FRAME_PRESETS, DropdownMenu(), DropdownMenuContent(), DropdownMenuItem() (+4 more)
 
 ### Community 2 - "Page Layout & Empty State"
-Cohesion: 0.16
-Nodes (14): ColorPopover(), ColorToken, loadSavedColors(), parseHex(), Rgba, storeSavedColors(), toColorValue(), THEME_COLORS (+6 more)
+Cohesion: 0.33
+Nodes (7): AvatarUploader(), ApiResult, read(), removeAvatarRequest(), sendFile(), cropToSquare(), AVATAR
 
 ### Community 3 - "UI Primitives (Button, Field)"
 Cohesion: 0.18
@@ -160,8 +152,8 @@ Cohesion: 0.09
 Nodes (21): aliases, components, hooks, lib, ui, utils, iconLibrary, menuAccent (+13 more)
 
 ### Community 7 - "studio-top-bar.tsx"
-Cohesion: 0.06
-Nodes (49): CodeViewer(), CopyCode(), ViewCodeDialog(), PublishDialog(), STEPS, trackCopy(), previewsExist(), highlighter (+41 more)
+Cohesion: 0.05
+Nodes (53): DetailsStep(), fieldId(), SUGGESTED_CATEGORIES, PublishDialog(), STEPS, Select(), SelectContent(), SelectItem() (+45 more)
 
 ### Community 8 - "TypeScript Config"
 Cohesion: 0.11
@@ -176,24 +168,24 @@ Cohesion: 0.50
 Nodes (4): Blue to Orange Gradient (#4D8BF0 to #FF5A1F), Brand Logo, Brush/Feather Mark, Dark Rounded Square Background (#141414)
 
 ### Community 11 - "Root Route"
-Cohesion: 0.13
-Nodes (13): AppearanceForm(), OPTIONS, RadioGroup(), RadioGroupItem(), applyTheme(), getStoredTheme(), isThemeChoice(), resolveTheme() (+5 more)
+Cohesion: 0.18
+Nodes (5): Sheet(), SheetContent(), SheetDescription(), SheetHeader(), SheetTitle()
 
 ### Community 12 - "Home Route"
-Cohesion: 0.24
-Nodes (14): ICONS, NotificationItem(), isPayload(), NotificationsBell(), DropdownMenuContent(), badgeText(), isUnread(), Notification (+6 more)
+Cohesion: 0.36
+Nodes (9): ICONS, NotificationItem(), isUnread(), Notification, notificationHref(), NotificationKind, notificationText(), base (+1 more)
 
 ### Community 13 - "Checkbox"
 Cohesion: 0.07
 Nodes (51): r(), LivePreview(), buildSrcDoc(), CaptureResult, PreviewApi, PreviewFrame(), PreviewStatus, FontPayload (+43 more)
 
 ### Community 17 - "studio-page.tsx"
-Cohesion: 0.27
-Nodes (8): TITLES, Breadcrumb(), BreadcrumbItem(), BreadcrumbLink(), BreadcrumbList(), BreadcrumbPage(), BreadcrumbSeparator(), Separator()
+Cohesion: 0.33
+Nodes (7): TITLES, Breadcrumb(), BreadcrumbItem(), BreadcrumbLink(), BreadcrumbList(), BreadcrumbPage(), BreadcrumbSeparator()
 
 ### Community 18 - "studio-top-bar.tsx"
 Cohesion: 0.14
-Nodes (20): Canvas(), CanvasControls(), ElementSelection, CanvasToolbar(), Tool, Box, defaultsFor(), descendantIds() (+12 more)
+Nodes (34): Canvas(), CanvasControls(), ElementSelection, absBox(), adoptingFrame(), boundsOf(), Box, byId() (+26 more)
 
 ### Community 19 - "Framework Mode"
 Cohesion: 0.14
@@ -216,8 +208,8 @@ Cohesion: 0.25
 Nodes (7): Declarative Mode, Declarative Router Shape, Mode Boundary, Navigation, Read the Local Docs by Mode, Routing, URL Values
 
 ### Community 24 - "user-menu.tsx"
-Cohesion: 0.23
-Nodes (13): ComponentDetail(), EMPTY, CopyInstall(), EMPTY, GalleryCard(), PreviewImage(), ComponentPage, DiscussionParams (+5 more)
+Cohesion: 0.11
+Nodes (26): CodeViewer(), CopyCode(), ComponentDetail(), EMPTY, CopyInstall(), EMPTY, GalleryCard(), PreviewImage() (+18 more)
 
 ### Community 25 - "code-editor.tsx"
 Cohesion: 0.09
@@ -225,27 +217,27 @@ Nodes (31): CodeEditor(), highlight, isDark(), lightTheme(), ancestor(), applyAu
 
 ### Community 26 - "authenticated.tsx"
 Cohesion: 0.08
-Nodes (49): instrument(), CheckRow(), ChecksStep(), LABEL, PreviewProgress, statusOf(), RESULT, ReviewStep() (+41 more)
+Nodes (48): instrument(), CheckRow(), ChecksStep(), LABEL, PreviewProgress, statusOf(), RESULT, ReviewStep() (+40 more)
 
 ### Community 39 - "canvas.tsx"
-Cohesion: 0.16
-Nodes (15): CodeEditor, CodeStudioPage(), Details, parseDesign(), InlineTitle(), PublishDetails, StudioComponent, StudioTopBar() (+7 more)
+Cohesion: 0.11
+Nodes (19): CodeEditor, CodeStudioPage(), Details, parseDesign(), ungroupObjects(), InlineTitle(), LeftPanel(), PublishDetails (+11 more)
 
 ### Community 40 - "sheet.tsx"
-Cohesion: 0.18
-Nodes (5): Sheet(), SheetContent(), SheetDescription(), SheetHeader(), SheetTitle()
+Cohesion: 0.67
+Nodes (3): clamp(), useCanvasTransform(), View
 
 ### Community 41 - "dashboard-layout.tsx"
-Cohesion: 0.40
-Nodes (3): AppHeader(), DashboardLayout(), TooltipProvider()
+Cohesion: 0.24
+Nodes (6): AppHeader(), DashboardLayout(), Tooltip(), TooltipContent(), TooltipProvider(), TooltipTrigger()
 
 ### Community 42 - "react"
 Cohesion: 0.12
-Nodes (25): Ctx, Discussion(), FILTERS, Meta(), Person(), tab(), ThreadView(), ActionReply (+17 more)
+Nodes (27): Ctx, Discussion(), FILTERS, Meta(), Person(), tab(), ThreadView(), ActionReply (+19 more)
 
 ### Community 43 - "publishing.server.ts"
-Cohesion: 0.17
-Nodes (10): getComponent(), avatarUrlFor(), createClient(), getUser(), action(), loader(), loader(), loader() (+2 more)
+Cohesion: 0.13
+Nodes (13): AuthHeader(), safeNextPath(), createClient(), getUser(), action(), action(), loader(), loader() (+5 more)
 
 ### Community 44 - "theme"
 Cohesion: 0.10
@@ -261,7 +253,7 @@ Nodes (19): items, description, items, type, description, items, type, descripti
 
 ### Community 47 - "properties"
 Cohesion: 0.07
-Nodes (28): description, type, description, type, type, description, type, description (+20 more)
+Nodes (28): description, type, type, description, type, description, type, description (+20 more)
 
 ### Community 48 - "items"
 Cohesion: 0.14
@@ -280,40 +272,40 @@ Cohesion: 0.08
 Nodes (44): arb(), borderWidth(), boxLook(), buildNodes(), childrenOf(), classAttr(), Cls, colorClass() (+36 more)
 
 ### Community 52 - "font"
-Cohesion: 0.13
-Nodes (17): GalleryPage(), PublicLayout(), cleanSearch(), cleanTag(), GalleryParams, GalleryResult, GallerySort, maybe() (+9 more)
+Cohesion: 0.14
+Nodes (17): GalleryPage(), cleanSearch(), cleanTag(), GalleryParams, GalleryResult, GallerySort, maybe(), parseGalleryParams() (+9 more)
 
 ### Community 53 - "meta"
-Cohesion: 0.20
-Nodes (14): Block(), RowCard(), count(), FeedbackRequests(), RequestBody(), RequestRow(), ORDER_CLASS, plural() (+6 more)
+Cohesion: 0.15
+Nodes (17): Block(), BlockError(), RowCard(), count(), FeedbackRequests(), RequestBody(), RequestRow(), ORDER_CLASS (+9 more)
 
 ### Community 54 - "description"
-Cohesion: 0.12
-Nodes (19): GettingStartedChecklist(), CATEGORY_LABELS, categoryLabel(), Checklist, ChecklistStep, deriveChecklist(), DraftItem, isObj() (+11 more)
+Cohesion: 0.14
+Nodes (16): GettingStartedChecklist(), CATEGORY_LABELS, Checklist, ChecklistStep, deriveChecklist(), DraftItem, isObj(), KEYS (+8 more)
 
 ### Community 55 - "extends"
-Cohesion: 0.17
-Nodes (24): CanvasObject(), absBox(), adoptingFrame(), boxShadowCss(), byId(), contains(), depthOf(), frameAt() (+16 more)
+Cohesion: 0.23
+Nodes (12): CanvasObject(), boxShadowCss(), Handle, isContainer(), isLineKind(), minSizeOf(), resizeBox(), textShadowCss() (+4 more)
 
 ### Community 56 - "iconLibrary"
-Cohesion: 0.10
-Nodes (21): ClassGroup, COLOR_TOKENS, currentClass(), FILL_TOKENS, GROUPS, opts(), scale(), setClass() (+13 more)
+Cohesion: 0.06
+Nodes (40): NotificationsList(), ClassGroup, COLOR_TOKENS, currentClass(), FILL_TOKENS, GROUPS, opts(), scale() (+32 more)
 
 ### Community 57 - "title"
 Cohesion: 0.14
-Nodes (21): ITEMS, NotificationsForm(), Switch(), ActionResult, changePassword(), getAccount(), getNotificationPrefs(), requestEmailChange() (+13 more)
+Nodes (20): ITEMS, NotificationsForm(), Switch(), AccountInfo, ActionResult, changePassword(), getAccount(), getNotificationPrefs() (+12 more)
 
 ### Community 58 - "jsx-tree.ts"
-Cohesion: 0.13
-Nodes (27): AvatarUploader(), fieldId(), ProfileForm(), ProfileSection(), SaveReply, toInput(), UsernameField(), UsernameStatus (+19 more)
+Cohesion: 0.30
+Nodes (12): cleanGithub(), isNotificationKey(), normalizeProfile(), NOTIFICATION_COLUMNS, NOTIFICATION_KEYS, RESERVED_USERNAMES, good, validateEmailAddress() (+4 more)
 
 ### Community 59 - "feedback-inbox.tsx"
-Cohesion: 0.20
-Nodes (18): attachCode(), boundsOf(), canCreateComponent(), canGroup(), childrenOf(), cloneWithNewIds(), createComponent(), createComponentFromLayers() (+10 more)
+Cohesion: 0.29
+Nodes (12): attachCode(), canGroup(), childrenOf(), createComponent(), createInstance(), duplicateObjects(), groupObjects(), patchObjects() (+4 more)
 
 ### Community 60 - "right-panel.tsx"
 Cohesion: 0.67
-Nodes (3): description, type, extends
+Nodes (3): description, type, author
 
 ### Community 61 - "properties"
 Cohesion: 0.18
@@ -324,24 +316,16 @@ Cohesion: 0.20
 Nodes (10): properties, type, items, type, config, plugins, tailwind, description (+2 more)
 
 ### Community 63 - "color-control.tsx"
-Cohesion: 0.14
-Nodes (16): AvatarResult, checkUsername(), CONSTRAINT_FIELD, EXTENSION, getProfile(), mapProfileError(), Row, SaveResult (+8 more)
+Cohesion: 0.10
+Nodes (22): AccountSection(), ProfileSection(), AvatarResult, avatarUrlFor(), CONSTRAINT_FIELD, EXTENSION, getProfile(), mapProfileError() (+14 more)
 
 ### Community 64 - "author"
-Cohesion: 0.07
-Nodes (29): DeleteComponent(), Result, PageContainer(), PageHeader(), SettingsLayout(), SECTIONS, SettingsNav(), AlertDialog() (+21 more)
-
-### Community 65 - "avatar-uploader.tsx"
-Cohesion: 0.24
-Nodes (6): BlockLink(), DraftsSkeleton(), RecentDrafts(), RelativeTime(), formatRelative(), UNITS
-
-### Community 66 - "studio-top-bar.tsx"
-Cohesion: 0.20
-Nodes (11): DetailsStep(), fieldId(), SUGGESTED_CATEGORIES, Input(), Select(), SelectContent(), SelectItem(), SelectSeparator() (+3 more)
+Cohesion: 0.06
+Nodes (30): DeleteComponent(), Result, EmptyState(), PageContainer(), PageHeader(), SettingsLayout(), SECTIONS, SettingsNav() (+22 more)
 
 ### Community 67 - "iconLibrary"
-Cohesion: 0.27
-Nodes (8): EmptyState(), RowsSkeleton(), FeedbackInbox(), FeedbackRow(), FeedbackSkeleton(), excerpt(), FeedbackItem, commentPath()
+Cohesion: 0.23
+Nodes (10): FeedbackInbox(), FeedbackRow(), FeedbackSkeleton(), RelativeTime(), categoryLabel(), excerpt(), FeedbackItem, formatRelative() (+2 more)
 
 ### Community 69 - "delete-account-dialog.tsx"
 Cohesion: 0.22
@@ -356,12 +340,12 @@ Cohesion: 0.29
 Nodes (5): classes, css, out, require, variants
 
 ### Community 72 - "right-panel.tsx"
-Cohesion: 0.07
-Nodes (42): State, BlockError(), columns(), StatsRow(), AccountSection(), Info, ConnectedAccounts(), label() (+34 more)
+Cohesion: 0.06
+Nodes (42): State, Info, AppearanceForm(), OPTIONS, ConnectedAccounts(), label(), LABELS, Choice (+34 more)
 
 ### Community 73 - "previews.server.ts"
-Cohesion: 0.15
-Nodes (15): DeleteAccountZone(), deleteAccount(), DeleteResult, check(), EXTENSION, removePreviewsOf(), storePreviews(), StoreResult (+7 more)
+Cohesion: 0.12
+Nodes (20): deleteAccount(), DeleteResult, check(), EXTENSION, removePreviewsOf(), storePreviews(), StoreResult, JPEG (+12 more)
 
 ### Community 74 - "notifications-form.tsx"
 Cohesion: 0.22
@@ -372,56 +356,32 @@ Cohesion: 0.67
 Nodes (3): title, description, type
 
 ### Community 76 - "settings-delete.ts"
-Cohesion: 0.33
-Nodes (6): Sidebar(), SidebarMenuButton(), sidebarMenuButtonVariants, SidebarRail(), SidebarTrigger(), useSidebar()
+Cohesion: 0.16
+Nodes (12): BlockLink(), RowsSkeleton(), columns(), StatsRow(), StatsSkeleton(), Card(), CardContent(), CardFooter() (+4 more)
 
 ### Community 77 - "layers-to-code.test.ts"
 Cohesion: 0.24
-Nodes (10): key(), loadDesign(), saveDesign(), syncGroups(), Action, empty, reducer(), State (+2 more)
-
-### Community 78 - "delete-account-dialog.tsx"
-Cohesion: 0.16
-Nodes (13): AppSidebar(), NAV, NavItem, useCurrentUser(), UserAvatar(), SidebarContent(), SidebarFooter(), SidebarGroup() (+5 more)
+Nodes (9): key(), loadDesign(), saveDesign(), Action, empty, reducer(), State, Update (+1 more)
 
 ### Community 79 - "v"
-Cohesion: 0.18
-Nodes (11): AuthorLink(), GalleryItem, previewUrl(), Handle, parseHandle(), profileHandle(), getProfilePage(), maybe() (+3 more)
+Cohesion: 0.16
+Nodes (12): AuthorLink(), PublicLayout(), GalleryItem, Handle, parseHandle(), profileHandle(), getProfilePage(), maybe() (+4 more)
 
 ### Community 80 - "sonner.tsx"
 Cohesion: 0.33
-Nodes (6): getNotifications(), markNotificationsSeen(), action(), loader(), action(), loader()
-
-### Community 81 - "guard"
-Cohesion: 0.29
-Nodes (9): removeAvatar(), uploadAvatar(), setNotificationPref(), clearAuthCookies(), guard(), createAdminClient(), action(), action() (+1 more)
+Nodes (7): NotificationsPayload, getNotifications(), markNotificationsSeen(), action(), loader(), action(), loader()
 
 ### Community 82 - "extends"
 Cohesion: 0.50
 Nodes (4): description, required, type, font
 
 ### Community 83 - "react"
-Cohesion: 0.50
-Nodes (4): SidebarMenuSkeleton(), SidebarProvider(), useIsMobile(), react
-
-### Community 84 - "package.json"
-Cohesion: 0.14
-Nodes (18): DesignObject, holdsChildren(), ObjectKind, ComponentActions, Edit, JsxAttr, JsxNodeInfo, LeftPanel() (+10 more)
+Cohesion: 0.16
+Nodes (16): DesignObject, holdsChildren(), ComponentActions, Edit, JsxAttr, JsxNodeInfo, ICONS, OutlineTab() (+8 more)
 
 ### Community 85 - "sign-in.tsx"
 Cohesion: 0.12
-Nodes (12): AuthHeader(), Field(), FieldDescription(), FieldError(), FieldGroup(), FieldLabel(), fieldVariants, safeNextPath() (+4 more)
-
-### Community 86 - "dependencies.ts"
-Cohesion: 0.40
-Nodes (5): NotificationsList(), ObjectProps(), fake(), fake(), v()
-
-### Community 87 - "measureTarget"
-Cohesion: 0.67
-Nodes (3): measureTarget(), MeasureLayer(), Side
-
-### Community 88 - "createPublicClient"
-Cohesion: 0.83
-Nodes (3): recordCopy(), createPublicClient(), action()
+Nodes (19): fieldId(), ProfileForm(), SaveReply, toInput(), UsernameField(), UsernameStatus, useUsernameCheck(), Field() (+11 more)
 
 ### Community 89 - "package.json"
 Cohesion: 0.50
@@ -435,17 +395,17 @@ Nodes (3): name, private, type
 ## Suggested Questions
 _Questions this graph is uniquely positioned to answer:_
 
-- **Why does `Button()` connect `right-panel.tsx` to `App Shell (Sidebar & Layout)`, `Page Layout & Empty State`, `studio-top-bar.tsx`, `Home Route`, `Checkbox`, `studio-page.tsx`, `studio-top-bar.tsx`, `user-menu.tsx`, `authenticated.tsx`, `canvas.tsx`, `sheet.tsx`, `react`, `font`, `meta`, `iconLibrary`, `jsx-tree.ts`, `author`, `studio-top-bar.tsx`, `iconLibrary`, `notifications-form.tsx`, `sonner.tsx`, `package.json`, `sign-in.tsx`?**
-  _High betweenness centrality (0.118) - this node is a cross-community bridge._
-- **Why does `dependencies` connect `Runtime Dependencies` to `author`, `package.json`, `react`?**
-  _High betweenness centrality (0.045) - this node is a cross-community bridge._
-- **Why does `react` connect `react` to `Runtime Dependencies`, `settings-delete.ts`?**
-  _High betweenness centrality (0.041) - this node is a cross-community bridge._
+- **Why does `Button()` connect `right-panel.tsx` to `App Shell (Sidebar & Layout)`, `Header & User Menu`, `Page Layout & Empty State`, `studio-top-bar.tsx`, `Root Route`, `Checkbox`, `studio-page.tsx`, `studio-top-bar.tsx`, `user-menu.tsx`, `authenticated.tsx`, `canvas.tsx`, `react`, `publishing.server.ts`, `meta`, `iconLibrary`, `author`, `notifications-form.tsx`, `settings-delete.ts`, `react`, `sign-in.tsx`?**
+  _High betweenness centrality (0.124) - this node is a cross-community bridge._
+- **Why does `dependencies` connect `Runtime Dependencies` to `App Shell (Sidebar & Layout)`, `package.json`, `author`?**
+  _High betweenness centrality (0.051) - this node is a cross-community bridge._
+- **Why does `react` connect `App Shell (Sidebar & Layout)` to `Runtime Dependencies`?**
+  _High betweenness centrality (0.047) - this node is a cross-community bridge._
 - **What connects `CODE`, `ICON`, `TOOLS` to the rest of the system?**
   _374 weakly-connected nodes found - possible documentation gaps or missing edges._
+- **Should `App Shell (Sidebar & Layout)` be split into smaller, more focused modules?**
+  _Cohesion score 0.08677098150782361 - nodes in this community are weakly interconnected._
 - **Should `Header & User Menu` be split into smaller, more focused modules?**
-  _Cohesion score 0.09788359788359788 - nodes in this community are weakly interconnected._
+  _Cohesion score 0.12318840579710146 - nodes in this community are weakly interconnected._
 - **Should `Auth Illustration` be split into smaller, more focused modules?**
   _Cohesion score 0.12318840579710146 - nodes in this community are weakly interconnected._
-- **Should `shadcn Config` be split into smaller, more focused modules?**
-  _Cohesion score 0.09090909090909091 - nodes in this community are weakly interconnected._
