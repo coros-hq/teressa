@@ -6,8 +6,14 @@ import { getUser } from "~/lib/supabase/server";
 
 import { AuthHeader } from "~/components/auth-header";
 import { Button } from "~/components/ui/button";
-import { Field, FieldError, FieldGroup, FieldLabel } from "~/components/ui/field";
+import {
+  Field,
+  FieldError,
+  FieldGroup,
+  FieldLabel,
+} from "~/components/ui/field";
 import { Input } from "~/components/ui/input";
+import { Separator } from "~/components/ui/separator";
 
 export function meta() {
   return [{ title: "Sign in" }];
@@ -15,8 +21,15 @@ export function meta() {
 
 export async function loader({ request }: Route.LoaderArgs) {
   const { user, headers } = await getUser(request);
-  if (user) throw redirect(safeNextPath(new URL(request.url).searchParams.get("next")), { headers });
-  return { notice: new URL(request.url).searchParams.get("notice") === "confirm-failed" };
+  if (user)
+    throw redirect(
+      safeNextPath(new URL(request.url).searchParams.get("next")),
+      { headers },
+    );
+  return {
+    notice:
+      new URL(request.url).searchParams.get("notice") === "confirm-failed",
+  };
 }
 
 export async function action({ request }: Route.ActionArgs) {
@@ -28,10 +41,15 @@ export async function action({ request }: Route.ActionArgs) {
   });
   if (error) return data({ error: error.message }, { status: 400 });
   // Back to the page they were on (for example a component they wanted to comment on), if there was one.
-  return redirect(safeNextPath(new URL(request.url).searchParams.get("next")), { headers });
+  return redirect(safeNextPath(new URL(request.url).searchParams.get("next")), {
+    headers,
+  });
 }
 
-export default function SignIn({ actionData, loaderData }: Route.ComponentProps) {
+export default function SignIn({
+  actionData,
+  loaderData,
+}: Route.ComponentProps) {
   const pending = useNavigation().state === "submitting";
   const error = actionData?.error;
   return (
@@ -41,9 +59,12 @@ export default function SignIn({ actionData, loaderData }: Route.ComponentProps)
         description="Enter your credentials to sign in to your account."
       />
       {loaderData?.notice && (
-        <p role="status" className="bg-muted text-muted-foreground mb-4 rounded-md px-3 py-2 text-sm">
-          That confirmation link didn&apos;t work. It may have been used already, so try signing in. If that
-          fails, create the account again.
+        <p
+          role="status"
+          className="bg-muted text-muted-foreground mb-4 rounded-md px-3 py-2 text-sm"
+        >
+          That confirmation link didn&apos;t work. It may have been used
+          already, so try signing in. If that fails, create the account again.
         </p>
       )}
       <Form method="post">
@@ -87,6 +108,10 @@ export default function SignIn({ actionData, loaderData }: Route.ComponentProps)
               Sign up
             </Link>
           </p>
+          <Separator />
+          <Button asChild variant="outline" size="lg" className="w-full">
+            <Link to="/explore">Explore</Link>
+          </Button>
         </FieldGroup>
       </Form>
     </>
